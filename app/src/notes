@@ -1,0 +1,50 @@
+While UI focuses on how the interface looks, UX focuses on the way the interface works.
+UX is more of a process, while UI is a deliverable.
+//git command
+git remote -v
+git remote add add upstream
+git pull upstream master/main
+git clone repo name
+git merge master
+git st
+git br
+git init
+git add .
+git commit -m "Message"
+git push --set-upstream origin branchname
+git co -b branchname
+
+//Mobile
+Test Automation.
+
+Espresso is an Android testing framework that makes it easy to write reliable UI tests.
+
+Android package kit
+Two APK target APK and test APK, runs top of it target APK.
+Same time both APK are running, you will only be seeing main/target APK.
+UI Automator for cross-app functional UI testing.
+
+iOS XCUITest and KIF(for mock account test)
+-	XCUI is an iOS UI test framework
+-	KIF framework is using for mock account.
+-	Mock integration test only.
+-	XCUI targeting the real account test.
+-
+
+Functional UI Automatio
+UI automation
+Are they getting the expected behavior or not
+
+-	View Matcher / Object matcher
+-	View Action
+-	View Assertion
+
+
+//To convert json file to readable format
+•	brew install jq
+•	Copy filename.json to your Desktop
+•	cd Desktop/
+•	cat filename.json | jq . > usman.json
+    modify the file
+•	cat usman.json | jq -c > filename.json
+
