@@ -4,6 +4,7 @@ UX is more of a process, while UI is a deliverable.
 git remote -v
 git remote add add upstream
 git pull upstream master/main
+git pr upstream 1234
 git clone repo name
 git merge master
 git st

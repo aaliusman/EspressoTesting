@@ -1,7 +1,6 @@
 package aaliusman.example.espressotesting
 
-import aaliusman.example.espressotesting.Matchers.childAtPosition
-import aaliusman.example.espressotesting.Matchers.isBitmapTheSame
+import aaliusman.example.espressotesting.Matchers.*
 import aaliusman.example.espressotesting.ui.movie.DirectorsFragment
 import aaliusman.example.espressotesting.ui.movie.MainActivity
 import android.os.SystemClock
@@ -101,6 +100,9 @@ class NavigationTest{
 //            .check(matches(isBitmapTheSame(R.drawable.infinity_war)))
 
         // VERIFY
+//        onView(nthChildOf(allOf(withId(R.id.movie_directors), isDescendantOfA(childAtPosition(withId(R.id.movie_star_actors), 0))), 0))
+//            .check(matches(hasDescendant(withText("Hello"))))
+
         onView(allOf(withId(R.id.fragment_movie_detail_parent)))
             .check(matches(isDisplayed()))
         onView(withId(R.id.fragment_movie_detail_parent))
@@ -108,7 +110,7 @@ class NavigationTest{
 
         onView(withId(R.id.movie_star_actors)).check(matches(isCompletelyDisplayed()))
             .check(isCompletelyBelow(withId(R.id.movie_directors)))
-            .check(matches(withClassName(containsString("TextView"))))
+            .check(matches(withClassName(containsString("tTextView"))))
 
         onView(withId(R.id.movie_description)).check(matches(isCompletelyDisplayed()))
             .check(isCompletelyBelow(withId(R.id.view)))
