@@ -18,6 +18,14 @@ git co -b branchname
 //Mobile
 Test Automation.
 
+Test Strategy and Intro -Shift left testing concept.
+
+Scaled Agile Development – Shift left model – to find defects in earlier cycle. To avoid cherry pick and patch releases. To test before merging PR to master.
+
+Our focus is to UI functionality works across all platform.
+
+Functional test feature –
+
 Espresso is an Android testing framework that makes it easy to write reliable UI tests.
 
 Android package kit
@@ -35,7 +43,6 @@ iOS XCUITest and KIF(for mock account test)
 Functional UI Automatio
 UI automation
 Are they getting the expected behavior or not
-
 -	View Matcher / Object matcher
 -	View Action
 -	View Assertion
@@ -44,7 +51,7 @@ Are they getting the expected behavior or not
 //To convert json file to readable format
 •	brew install jq
 •	Copy filename.json to your Desktop
-•	cd Desktop/
+•	cd Desktop through terminal
 •	cat filename.json | jq . > usman.json
     modify the file
 •	cat usman.json | jq -c > filename.json
